@@ -1,0 +1,110 @@
+{
+    "dry_days": [
+      {
+        "date": "2025-01-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-02-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-03-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-04-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-05-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-06-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-07-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-08-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-09-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-10-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-11-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-12-01",
+        "day": "First Day of the Month",
+        "reason": "Monthly dry day"
+      },
+      {
+        "date": "2025-01-26",
+        "day": "Republic Day",
+        "reason": "National holiday"
+      },
+      {
+        "date": "2025-08-15",
+        "day": "Independence Day",
+        "reason": "National holiday"
+      },
+      {
+        "date": "2025-10-02",
+        "day": "Gandhi Jayanti",
+        "reason": "National holiday and a day promoting abstinence from alcohol"
+      },
+      {
+        "date": "2025-02-26",
+        "day": "Maha Shivaratri",
+        "reason": "Religious significance"
+      },
+      {
+        "date": "2025-04-14",
+        "day": "Dr. B.R. Ambedkar Jayanti",
+        "reason": "National holiday"
+      },
+      {
+        "date": "2025-04-18",
+        "day": "Good Friday",
+        "reason": "Christian religious observance"
+      },
+      {
+        "date": "2025-07-09",
+        "day": "Muharram",
+        "reason": "Islamic religious observance"
+      },
+      {
+        "date": "2025-09-07",
+        "day": "Sree Narayana Guru Samadhi",
+        "reason": "Regional religious observance"
+      },
+      {
+        "date": "2025-12-25",
+        "day": "Christmas",
+        "reason": "Christian religious observance"
+      }
+    ]
+  }
+  
