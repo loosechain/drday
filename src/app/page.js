@@ -67,7 +67,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center py-8 px-6 gap-8">
+    <div className="flex flex-col items-center justify-center py-6 md:py-8 px-4 md:px-6 gap-6 md:gap-8">
       {/* Main Card */}
       <motion.div
         initial="initial"
@@ -75,15 +75,15 @@ export default function Home() {
         variants={cardVariants}
         className="w-full max-w-xl"
       >
-        <Card className="w-full shadow-lg text-center p-6 rounded-2xl bg-black text-white border border-gray-700">
+        <Card className="w-full shadow-lg text-center p-4 md:p-6 rounded-2xl bg-black text-white border border-gray-700">
           <CardHeader>
-            <CardTitle className="text-3xl font-bold">
+            <CardTitle className="text-2xl md:text-3xl font-bold">
               {showResult ? (isDryDay ? "Dry Day 🚫" : "Bar Open 🍻") : "Checking..."}
             </CardTitle>
           </CardHeader>
           <CardContent>
             {showResult && (
-              <p className="text-lg mt-2">
+              <p className="text-base md:text-lg mt-2">
                 {isDryDay ? `No alcohol sales today. Reason: ${reason}` : "Enjoy responsibly!"}
               </p>
             )}
@@ -93,18 +93,18 @@ export default function Home() {
 
       {/* Additional Feature Cards */}
       <motion.div 
-        className="w-full max-w-5xl grid grid-cols-4 gap-6 mx-auto px-4"
+        className="w-full max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 mx-auto"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.4, ease: [0.24, 0.25, 0.05, 1] }}
       >
         {/* Check Prices */}
-        <Card className="bg-black text-white border border-gray-700 rounded-xl p-4 flex flex-col">
-          <CardHeader className="space-y-1.5 p-0 pb-4">
-            <CardTitle className="text-xl font-semibold">Check Prices</CardTitle>
+        <Card className="bg-black text-white border border-gray-700 rounded-xl p-3 md:p-4 flex flex-col">
+          <CardHeader className="space-y-1 p-0 pb-2 md:pb-4">
+            <CardTitle className="text-lg md:text-xl font-semibold">Check Prices</CardTitle>
           </CardHeader>
           <CardContent className="p-0 flex flex-col flex-1 justify-between">
-            <p className="text-gray-300 mb-4">Find all liquor prices in Kerala</p>
+            <p className="text-gray-300 text-sm md:text-base mb-3 md:mb-4">Find all liquor prices in Kerala</p>
             <motion.div
               initial="initial"
               whileHover="hover"
@@ -118,7 +118,7 @@ export default function Home() {
                   transition-all duration-300 ease-out
                   shadow-[0_0_0_0_rgba(255,255,255,0.1)]
                   hover:shadow-[0_0_20px_0_rgba(255,255,255,0.1)]
-                  text-[15px] font-medium tracking-wide py-5
+                  text-sm md:text-[15px] font-medium tracking-wide py-3 md:py-5
                   hover:font-semibold"
                 onClick={() => router.push("/rates")}
               >
@@ -129,12 +129,12 @@ export default function Home() {
         </Card>
 
         {/* Events Card */}
-        <Card className="bg-black text-white border border-gray-700 rounded-xl p-4 flex flex-col">
-          <CardHeader className="space-y-1.5 p-0 pb-4">
-            <CardTitle className="text-xl font-semibold">Events 🎉</CardTitle>
+        <Card className="bg-black text-white border border-gray-700 rounded-xl p-3 md:p-4 flex flex-col">
+          <CardHeader className="space-y-1 p-0 pb-2 md:pb-4">
+            <CardTitle className="text-lg md:text-xl font-semibold">Events 🎉</CardTitle>
           </CardHeader>
           <CardContent className="p-0 flex flex-col flex-1 justify-between">
-            <p className="text-gray-300 mb-4">Book your spot for upcoming events</p>
+            <p className="text-gray-300 text-sm md:text-base mb-3 md:mb-4">Book your spot for upcoming events</p>
             <motion.div
               initial="initial"
               whileHover="hover"
@@ -148,7 +148,7 @@ export default function Home() {
                   transition-all duration-300 ease-out
                   shadow-[0_0_0_0_rgba(255,255,255,0.1)]
                   hover:shadow-[0_0_20px_0_rgba(255,255,255,0.1)]
-                  text-[15px] font-medium tracking-wide py-5
+                  text-sm md:text-[15px] font-medium tracking-wide py-3 md:py-5
                   hover:font-semibold"
                 onClick={() => router.push("/events")}
               >
@@ -159,12 +159,12 @@ export default function Home() {
         </Card>
 
         {/* Social Media */}
-        <Card className="bg-black text-white border border-gray-700 rounded-xl p-4 flex flex-col">
-          <CardHeader className="space-y-1.5 p-0 pb-4">
-            <CardTitle className="text-xl font-semibold">Social Media</CardTitle>
+        <Card className="bg-black text-white border border-gray-700 rounded-xl p-3 md:p-4 flex flex-col">
+          <CardHeader className="space-y-1 p-0 pb-2 md:pb-4">
+            <CardTitle className="text-lg md:text-xl font-semibold">Social Media</CardTitle>
           </CardHeader>
           <CardContent className="p-0 flex flex-col flex-1 justify-between">
-            <p className="text-gray-300 mb-4">Find and follow us on Telegram & Instagram</p>
+            <p className="text-gray-300 text-sm md:text-base mb-3 md:mb-4">Find and follow us on Telegram & Instagram</p>
             <motion.div
               initial="initial"
               whileHover="hover"
@@ -178,7 +178,7 @@ export default function Home() {
                   transition-all duration-300 ease-out
                   shadow-[0_0_0_0_rgba(255,255,255,0.1)]
                   hover:shadow-[0_0_20px_0_rgba(255,255,255,0.1)]
-                  text-[15px] font-medium tracking-wide py-5
+                  text-sm md:text-[15px] font-medium tracking-wide py-3 md:py-5
                   hover:font-semibold"
                 onClick={() => router.push("/social")}
               >
@@ -189,12 +189,12 @@ export default function Home() {
         </Card>
 
         {/* Donate */}
-        <Card className="bg-black text-white border border-gray-700 rounded-xl p-4 flex flex-col">
-          <CardHeader className="space-y-1.5 p-0 pb-4">
-            <CardTitle className="text-xl font-semibold">Donate 💰</CardTitle>
+        <Card className="bg-black text-white border border-gray-700 rounded-xl p-3 md:p-4 flex flex-col">
+          <CardHeader className="space-y-1 p-0 pb-2 md:pb-4">
+            <CardTitle className="text-lg md:text-xl font-semibold">Donate 💰</CardTitle>
           </CardHeader>
           <CardContent className="p-0 flex flex-col flex-1 justify-between">
-            <p className="text-gray-300 mb-4">Support DryDay by donating ₹1</p>
+            <p className="text-gray-300 text-sm md:text-base mb-3 md:mb-4">Support DryDay by donating ₹1</p>
             <motion.div
               initial="initial"
               whileHover="hover"
@@ -208,7 +208,7 @@ export default function Home() {
                   transition-all duration-300 ease-out
                   shadow-[0_0_0_0_rgba(255,255,255,0.1)]
                   hover:shadow-[0_0_20px_0_rgba(255,255,255,0.1)]
-                  text-[15px] font-medium tracking-wide py-5
+                  text-sm md:text-[15px] font-medium tracking-wide py-3 md:py-5
                   hover:font-semibold"
                 onClick={() => router.push("/donate")}
               >
